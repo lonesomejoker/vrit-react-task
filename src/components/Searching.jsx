@@ -29,11 +29,11 @@ const Searching = () => {
   );
 
   return (
-    <div className='px-12 py-6 text-gray-800 bg-center bg-no-repeat bg-cover rounded-tl-[2.5rem] rounded-br-[2.5rem] bg-white/30 backdrop-blur-lg w-fit ' style={{backgroundImage:"url('https://images.hdqwalls.com/download/ocean-reflection-3840x2400.jpg')"}}>
+    <div className='px-12 py-6 text-gray-800 bg-center bg-no-repeat bg-cover rounded-tl-[2rem] rounded-br-[2rem] bg-white/30 backdrop-blur-lg w-fit ' style={{backgroundImage:"url('https://images.hdqwalls.com/download/aurora-at-crater-lake-oregon-4k-uo-3840x2160.jpg')"}}>
       <p>TASK 1:</p>
-      <h1 className='mb-5 text-[2.8rem]'>Simple Search Filter</h1>
-      <input  type="text" placeholder="Search Here..." value={searchCars} onChange={handleSearch} className="p-3 text-neutral-900 text-[1.5rem] mx-auto w-full rounded-tr-lg rounded-bl-lg bg-white/30 backdrop-blur " style={{ outline: "none", border: "none" }}/>
-      <p className='my-3 text-[1.5rem]'>List of cars will be shown below...</p>
+      <h1 className='mb-5 text-[2rem]'>Simple Search Filter</h1>
+      <input  type="text" placeholder="Search Here..." value={searchCars} onChange={handleSearch} className="p-3 text-neutral-900 text-[1.3rem] mx-auto w-full rounded-tr-lg rounded-bl-lg bg-white/30 backdrop-blur " style={{ outline: "none", border: "none" }}/>
+      <p className='my-3 text-[1.3rem]'>List of cars will be shown below...</p>
       <div className=' text-lg font-[500] space-y-2 duration-500 text-[1.4rem]'>
         {searchCars && filteredcars.length > 0 ? (
           filteredcars.map((item, index) => (
